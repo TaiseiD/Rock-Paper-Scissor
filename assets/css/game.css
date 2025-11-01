@@ -1,0 +1,107 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1a1a2e, #16213e);
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* GAME CONTAINER */
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 60px);
+  padding-top: 40px;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 3rem;
+  color: #ff4757;
+  text-shadow: 0 0 15px rgba(255, 71, 87, 0.7);
+  margin: 20px 0;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #00b4ff;
+  margin-bottom: 10px;
+}
+
+/* OPPONENT SECTION */
+.opponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opponentImg {
+  background: #000;
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #00b4ff;
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.6);
+}
+
+.opponentImg img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: brightness(0.3); /* dark for hidden state */
+}
+
+/* PLAYER SECTION */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.choice {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #222;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s;
+  border: 2px solid transparent;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  background-color: #2a2a4a;
+  border: 2px solid #00b4ff;
+  box-shadow: 0 0 20px rgba(0, 180, 255, 0.7);
+}
+
+/* VS TEXT */
+.gameContainer > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 0 25px rgba(255, 71, 87, 0.9);
+  margin: 30px 0;
+}

@@ -1,0 +1,58 @@
+/* Base button style */
+.btn {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Primary (main action) */
+.btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+.btn.primary:hover {
+  background-color: #0062cc;
+}
+
+/* Secondary (neutral or sub-action) */
+.btn.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+.btn.secondary:hover {
+  background-color: #545b62;
+}
+
+/* Success (positive action) */
+.btn.success {
+  background-color: #28a745;
+  color: white;
+}
+.btn.success:hover {
+  background-color: #218838;
+}
+
+/* Danger (warning or delete) */
+.btn.danger {
+  background-color: #dc3545;
+  color: white;
+}
+.btn.danger:hover {
+  background-color: #c82333;
+}
+
+/* Outline (minimal, transparent background) */
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+.btn.outline:hover {
+  background-color: #007bff;
+  color: white;
+}

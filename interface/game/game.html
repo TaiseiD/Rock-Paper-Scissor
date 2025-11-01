@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game Mode</title>
+
+    <script src="../../components/navbar/Navigation.js"></script>
+
+    <link rel="stylesheet" href="../../assets/css/game.css">
+</head>
+<body>
+    <nav-bar></nav-bar>
+
+    <div class="gameContainer">
+        <section class="opponent">
+            <h2>Opponent</h2>
+            <div class="opponentImg">
+                <img class="choice1" id="opponent">
+            </div>
+        </section>
+
+        <h1> VS </h1>
+
+        <section class="player">
+            <h2> Choose </h2>
+            <div class="choices">
+                <img class="choice2" id="rock" src="../../assets/images/rock.png">
+                <img class="choice2" id="paper" src="../../assets/images/paper.png">
+                <img class="choice2" id="scissor" src="../../assets/images/scissors.png">
+            </div>
+        </section>
+
+        <script src="../../assets/js/game.js"> </script>
+    </div>
+</body>
+</html>
